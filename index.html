@@ -226,7 +226,11 @@
 </div>
 
 <input type="text" id="search-bar" class="search-bar" placeholder="Поиск персонажа..." oninput="searchCharacter()" />
-
+<div class="category">
+    <h2><b>[NEW]</b> Project SEKAI</h2>
+    <div class="character-list" id="SEKAI-list">
+    </div>
+</div>
 <div class="category">
     <h2>Genshin Impact</h2>
     <div class="character-list" id="genshin-list">
@@ -250,45 +254,65 @@ en: {
         { 
             name: "Hu Tao", 
             from: "Genshin Impact", 
-            link: "https://t.me/AnimeGenie_HnBot?generate='l:hu_tao,'", 
+            link: "https://t.me/AnimeGenie_HnBot?generate=l:hu_tao,", 
             image: "https://images-ng.pixai.art/images/orig/f0dbbd9c-2e54-427e-9093-39c27cb4b355" 
         },
         { 
             name: "Raiden Shogun", 
             from: "Genshin Impact", 
-            link: "https://t.me/AnimeGenie_HnBot?generate='l:raiden,'", 
+            link: "https://t.me/AnimeGenie_HnBot?generate=l:raiden,", 
             image: "https://images-ng.pixai.art/images/orig/d7d1081e-b9c2-4c79-bec0-dc441ba45b59" 
         },
         { 
             name: "Yoimiya", 
             from: "Genshin Impact", 
-            link: "https://t.me/AnimeGenie_HnBot?generate='l:yoimiya,'", 
+            link: "https://t.me/AnimeGenie_HnBot?generate=l:yoimiya,", 
             image: "https://images-ng.pixai.art/images/orig/80eefddd-490e-41cf-9f7b-c9df669b1b71" 
         },
         { 
             name: "Shenhe", 
             from: "Genshin Impact", 
-            link: "https://t.me/AnimeGenie_HnBot?generate='l:shenhe,'", 
+            link: "https://t.me/AnimeGenie_HnBot?generate=l:shenhe,", 
             image: "https://images-ng.pixai.art/images/orig/117c6956-cde8-4ab9-a69f-9fde224d3c05" 
         }
-    ], 
+    ],
+    sekai: [
+        {
+          name: "Luka Megurine", 
+          from: "Project SEKAI", 
+          link: "https://t.me/AnimeGenie_HnBot?generate=l:megurine,", 
+          image: "https://images-ng.pixai.art/images/orig/5ea467c5-ee88-44e2-8ef5-c656942f76be"             
+        },
+        {
+            name: "Azusawa Kohane",
+            from: "Project SEKAI",
+            link: "https://t.me/AnimeGenie_HnBot?generate=l:azusawa,",
+            image: "https://images-ng.pixai.art/images/orig/ec982748-9a26-41ad-a360-3198d47297de"
+        },
+        {
+            name: "Otori Emu",
+            from: "Project SEKAI",
+            link: "https://t.me/AnimeGenie_HnBot?generate=l:otori,",  
+            image: "https://images-ng.pixai.art/images/orig/65009732-806b-4f59-8e85-f41e5d5d55f1"
+        },
+    ],
     demonSlayer: [
         { 
             name: "Mitsuri", 
             from: "Demon Slayer", 
-            link: "https://t.me/AnimeGenie_HnBot?generate='l:mitsuri,'", 
+            link: "https://t.me/AnimeGenie_HnBot?generate=l:mitsuri,", 
             image: "https://images-ng.pixai.art/images/orig/4a0d99dd-4cd1-4fa3-8012-5ac7bba95015" 
         },
       { 
           name: "Shinobu", 
           from: "Demon Slayer", 
-          link: "https://t.me/AnimeGenie_HnBot?generate='l:shinobu,'", 
+          link: "https://t.me/AnimeGenie_HnBot?generate=l:shinobu,", 
           image: "https://images-ng.pixai.art/images/orig/48c664f3-77bb-423a-9bd6-c9cffaae4510" 
       },
       { 
           name: "Nezuko", 
           from: "Demon Slayer", 
-          link: "https://t.me/AnimeGenie_HnBot?generate='l:nezuko,'", 
+          link: "https://t.me/AnimeGenie_HnBot?generate=l:nezuko,", 
           image: "https://images-ng.pixai.art/images/orig/a614ed26-6863-4b39-a1e4-53ec1e33e00c" 
       },
     ],
@@ -379,6 +403,26 @@ ru: {
           image: "https://images-ng.pixai.art/images/orig/a614ed26-6863-4b39-a1e4-53ec1e33e00c" 
       },
     ],
+    sekai: [
+        {
+          name: "Мегурине Лука", 
+          from: "Project SEKAI", 
+          link: "https://t.me/AnimeGenie_HnBot?generate=l:megurine,", 
+          image: "https://images-ng.pixai.art/images/orig/5ea467c5-ee88-44e2-8ef5-c656942f76be"             
+        },
+        {
+            name: "Азусава Кохане",
+            from: "Project SEKAI",
+            link: "https://t.me/AnimeGenie_HnBot?generate=l:azusawa,",  
+            image: "https://images-ng.pixai.art/images/orig/ec982748-9a26-41ad-a360-3198d47297de"
+        },
+        {
+            name: "Отори Эму",
+            from: "Project SEKAI",
+            link: "https://t.me/AnimeGenie_HnBot?generate=l:otori,",  
+            image: "https://images-ng.pixai.art/images/orig/65009732-806b-4f59-8e85-f41e5d5d55f1"
+        },
+    ],
     other: [
         { 
             name: "Сенко", 
@@ -432,10 +476,11 @@ function renderCharacters(language) {
     const genshinList = document.getElementById("genshin-list");
     const otherList = document.getElementById("other-list");
     const demonSlayerList = document.getElementById("demon-slayer-list");
-
+    const sekaiList = document.getElementById("SEKAI-list")
     genshinList.innerHTML = "";
     otherList.innerHTML = "";
     demonSlayerList.innerHTML = "";
+    sekaiList.innerHTML = "";
 
     characters[language].genshin.forEach(character => {
         const card = createCharacterCard(character);
@@ -450,6 +495,10 @@ function renderCharacters(language) {
     characters[language].demonSlayer.forEach(character => {
         const card = createCharacterCard(character);
         demonSlayerList.appendChild(card);
+    });
+    characters[language].sekai.forEach(character => {
+        const card = createCharacterCard(character);
+        sekaiList.appendChild(card);
     });
 }
 
