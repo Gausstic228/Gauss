@@ -3,25 +3,25 @@ const characters = {
         genshin: [
             { 
                 name: "Hu Tao", 
-                from: "Genshin Impact", 
+                from: "", 
                 link: "l:hu_tao,", 
                 image: "https://images-ng.pixai.art/images/orig/f0dbbd9c-2e54-427e-9093-39c27cb4b355" 
             },
             { 
                 name: "Raiden Shogun", 
-                from: "Genshin Impact", 
+                from: "", 
                 link: "l:raiden,", 
                 image: "https://images-ng.pixai.art/images/orig/d7d1081e-b9c2-4c79-bec0-dc441ba45b59" 
             },
             { 
                 name: "Yoimiya", 
-                from: "Genshin Impact", 
+                from: "", 
                 link: "l:yoimiya,", 
                 image: "https://images-ng.pixai.art/images/orig/80eefddd-490e-41cf-9f7b-c9df669b1b71" 
             },
             { 
                 name: "Shenhe", 
-                from: "Genshin Impact", 
+                from: "", 
                 link: "l:shenhe,", 
                 image: "https://images-ng.pixai.art/images/orig/117c6956-cde8-4ab9-a69f-9fde224d3c05" 
             }
@@ -29,39 +29,45 @@ const characters = {
         sekai: [
             {
                 name: "Luka Megurine", 
-                from: "Project SEKAI", 
+                from: "", 
                 link: "l:megurine,", 
                 image: "https://images-ng.pixai.art/images/orig/5ea467c5-ee88-44e2-8ef5-c656942f76be"             
             },
             {
                 name: "Azusawa Kohane",
-                from: "Project SEKAI",
-                link: "l:azusawa,",
+                from: "",
+                link: "l:kohane,"
                 image: "https://images-ng.pixai.art/images/orig/ec982748-9a26-41ad-a360-3198d47297de"
             },
             {
                 name: "Otori Emu",
-                from: "Project SEKAI",
+                from: "",
                 link: "l:otori,",  
                 image: "https://images-ng.pixai.art/images/orig/65009732-806b-4f59-8e85-f41e5d5d55f1"
             },
+            {
+                name: "Asahina Mafuyu",
+                from: "",
+                link: "l:mafuyu,",
+                image: "https://images-ng.pixai.art/images/orig/b5e64d91-33ec-4c62-a6ab-0e3661969b3b"
+            }
         ],
         demonSlayer: [
             { 
                 name: "Mitsuri", 
-                from: "Demon Slayer", 
+                from: "", 
                 link: "l:mitsuri,", 
                 image: "https://images-ng.pixai.art/images/orig/4a0d99dd-4cd1-4fa3-8012-5ac7bba95015" 
             },
             { 
                 name: "Shinobu", 
-                from: "Demon Slayer", 
+                from: "", 
                 link: "l:shinobu,", 
                 image: "https://images-ng.pixai.art/images/orig/48c664f3-77bb-423a-9bd6-c9cffaae4510" 
             },
             { 
                 name: "Nezuko", 
-                from: "Demon Slayer", 
+                from: "", 
                 link: "l:nezuko,", 
                 image: "https://images-ng.pixai.art/images/orig/a614ed26-6863-4b39-a1e4-53ec1e33e00c" 
             },
@@ -98,10 +104,22 @@ const characters = {
                 image: "https://images-ng.pixai.art/images/orig/d5c9438a-b6ed-4e25-a7e4-c893d0d83e7a"
             },
             {
+                name: "Himeno",
+                from: "Chainsaw Man",
+                link: "l:himeno,",
+                image: "https://images-ng.pixai.art/images/orig/2e6f8839-38e3-4cf4-b49a-1001ecac7398"
+            },
+            {
                 name: "Meru",
                 from: "Meru the Succubus",
                 link: "l:meru,",
                 image: "https://images-ng.pixai.art/images/orig/5684ab1e-9543-4564-a611-e885234fdde5"
+            },
+            {
+                name: "Felix",
+                from: "Re: Zero",
+                link: "l:felix,",
+                image: "https://images-ng.pixai.art/images/orig/2304960e-ad4c-48d6-abda-2d28a1da4a55"
             }
         ]
     },
@@ -109,25 +127,25 @@ const characters = {
         genshin: [
             { 
                 name: "Ху Тао", 
-                from: "Genshin Impact", 
+                from: "", 
                 link: "l:hu_tao,", 
                 image: "https://images-ng.pixai.art/images/orig/f0dbbd9c-2e54-427e-9093-39c27cb4b355" 
             },
             { 
                 name: "Райден Шогун", 
-                from: "Genshin Impact", 
+                from: "", 
                 link: "l:raiden,", 
                 image: "https://images-ng.pixai.art/images/orig/d7d1081e-b9c2-4c79-bec0-dc441ba45b59" 
             },
             { 
                 name: "Ёимия", 
-                from: "Genshin Impact", 
+                from: "", 
                 link: "l:yoimiya,", 
                 image: "https://images-ng.pixai.art/images/orig/80eefddd-490e-41cf-9f7b-c9df669b1b71" 
             },
             { 
                 name: "Шень хэ", 
-                from: "Genshin Impact", 
+                from: "", 
                 link: "l:shenhe,", 
                 image: "https://images-ng.pixai.art/images/orig/117c6956-cde8-4ab9-a69f-9fde224d3c05" 
             }
@@ -135,19 +153,19 @@ const characters = {
         demonSlayer: [
             { 
                 name: "Мицури", 
-                from: "Клинок рассекающий демонов", 
+                from: "", 
                 link: "l:mitsuri,", 
                 image: "https://images-ng.pixai.art/images/orig/4a0d99dd-4cd1-4fa3-8012-5ac7bba95015" 
             },
             { 
                 name: "Шинобу", 
-                from: "Клинок рассекающий демонов", 
+                from: "", 
                 link: "l:shinobu,", 
                 image: "https://images-ng.pixai.art/images/orig/48c664f3-77bb-423a-9bd6-c9cffaae4510" 
             },
             { 
                 name: "Незуко", 
-                from: "Клинок рассекающий демонов", 
+                from: "", 
                 link: "l:nezuko,", 
                 image: "https://images-ng.pixai.art/images/orig/a614ed26-6863-4b39-a1e4-53ec1e33e00c" 
             },
@@ -155,22 +173,28 @@ const characters = {
         sekai: [
             {
                 name: "Мегурине Лука", 
-                from: "Project SEKAI", 
+                from: "", 
                 link: "l:megurine,", 
                 image: "https://images-ng.pixai.art/images/orig/5ea467c5-ee88-44e2-8ef5-c656942f76be"             
             },
             {
                 name: "Азусава Кохане",
-                from: "Project SEKAI",
-                link: "l:azusawa,",  
+                from: "",
+                link: "l:kohane,",  
                 image: "https://images-ng.pixai.art/images/orig/ec982748-9a26-41ad-a360-3198d47297de"
             },
             {
                 name: "Отори Эму",
-                from: "Project SEKAI",
+                from: "",
                 link: "l:otori,",  
                 image: "https://images-ng.pixai.art/images/orig/65009732-806b-4f59-8e85-f41e5d5d55f1"
             },
+            {
+                name: "Асахина Мафую",
+                from: "",
+                link: "l:mafuyu,",
+                image: "https://images-ng.pixai.art/images/orig/b5e64d91-33ec-4c62-a6ab-0e3661969b3b"
+            }
         ],
         other: [
             { 
@@ -204,10 +228,22 @@ const characters = {
                 image: "https://images-ng.pixai.art/images/orig/d5c9438a-b6ed-4e25-a7e4-c893d0d83e7a"
             },
             {
+                name: "Химено",
+                from: "Человек-бензопила",
+                link: "l:himeno,",
+                image: "https://images-ng.pixai.art/images/orig/2e6f8839-38e3-4cf4-b49a-1001ecac7398"
+            },
+            {
                 name: "Меру",
                 from: "Суккуб Меру",
                 link: "l:meru,",
                 image: "https://images-ng.pixai.art/images/orig/5684ab1e-9543-4564-a611-e885234fdde5"
+            },
+            {
+                name: "Феликс",
+                from: "Ре: зеро",
+                link: "l:felix,",
+                image: "https://images-ng.pixai.art/images/orig/2304960e-ad4c-48d6-abda-2d28a1da4a55"
             }
         ]
     }
@@ -271,7 +307,9 @@ function createCharacterCard(character) {
 
 function copyToClipboard(text) {
     navigator.clipboard.writeText(text).then(() => {
-        alert(`"${text}" Скопирован. Напишите это сообщения в бота.`);
+        alert(`"${text}" Скопирован. 
+            Напишите это сообщения в боте.
+            Telegram: @AnimeGenie_Hn`);
     }).catch(err => {
         console.error('Ошибка при копировании: ', err);
     });

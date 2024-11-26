@@ -10,9 +10,7 @@ body {
     justify-content: flex-start;
     height: 100vh;
     animation: fadeIn 1s ease-in;
-    user-select: none; /* Отключает выделение текста */
-    -webkit-user-select: none; /* Для Safari */
-    -ms-user-select: none; /* Для старых версий IE */
+    user-select: none;
 }
 
 h1 {
@@ -31,6 +29,12 @@ h1 {
 @keyframes bounce {
     from { transform: translateY(0); }
     to { transform: translateY(-10px); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
 }
 
 #language-modal {
@@ -53,7 +57,8 @@ h1 {
     border-radius: 12px;
     text-align: center;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    animation: pulse 1s infinite alternate;
 }
 
 #language-modal-content button {
@@ -65,12 +70,13 @@ h1 {
     cursor: pointer;
     border-radius: 5px;
     margin: 10px;
-    transition: background 0.3s, transform 0.3s;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
 #language-modal-content button:hover {
     background: #fb8c00;
     transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 .category {
@@ -83,11 +89,12 @@ h1 {
     padding: 20px;
     background: #1e1e1e;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .category:hover {
     transform: scale(1.02);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
 }
 
 .category h2 {
@@ -115,12 +122,14 @@ h1 {
     cursor: pointer;
     position: relative;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.5s ease-in-out;
 }
 
 .character-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
 .character-card h3 {
@@ -143,6 +152,10 @@ h1 {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
 }
 
+.character-card:hover img {
+    transform: scale(1.1);
+}
+
 .search-bar {
     width: 70%;
     max-width: 600px;
@@ -159,4 +172,17 @@ h1 {
 
 .search-bar:focus {
     background: #333333;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    font-size: 14px;
+    white-space: nowrap;
 }
