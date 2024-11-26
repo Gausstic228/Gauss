@@ -36,7 +36,7 @@ const characters = {
             {
                 name: "Azusawa Kohane",
                 from: "",
-                link: "l:kohane,"
+                link: "l:kohane,",
                 image: "https://images-ng.pixai.art/images/orig/ec982748-9a26-41ad-a360-3198d47297de"
             },
             {
