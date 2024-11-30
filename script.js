@@ -120,6 +120,24 @@ const characters = {
                 from: "Re: Zero",
                 link: "l:felix,",
                 image: "https://images-ng.pixai.art/images/orig/2304960e-ad4c-48d6-abda-2d28a1da4a55"
+            },
+            {
+                name: "Cow",
+                from: "Style",
+                link: "l:cow,",
+                image: "https://images-ng.pixai.art/images/orig/f59b6f01-5d54-4f58-b8bb-d49897fd9008"
+            },
+            {
+                name: "Mimi",
+                from: "",
+                link: "l:mimi,",
+                image: "https://images-ng.pixai.art/images/orig/f398d1b5-ef52-4098-8bf6-c98cbc150a23"
+            },
+            {
+                name: "Zero Two",
+                from: "",
+                link: "l:zero_two,",
+                image: "https://images-ng.pixai.art/images/orig/c3b81738-82fc-42c3-8e7f-3b7d916c298b"
             }
         ]
     },
@@ -244,6 +262,24 @@ const characters = {
                 from: "Ре: зеро",
                 link: "l:felix,",
                 image: "https://images-ng.pixai.art/images/orig/2304960e-ad4c-48d6-abda-2d28a1da4a55"
+            },
+            {
+                name: "Cow",
+                from: "Style",
+                link: "l:cow,",
+                image: "https://images-ng.pixai.art/images/orig/f59b6f01-5d54-4f58-b8bb-d49897fd9008"
+            },
+            {
+                name: "Mimi",
+                from: "",
+                link: "l:mimi,",
+                image: "https://images-ng.pixai.art/images/orig/f398d1b5-ef52-4098-8bf6-c98cbc150a23"
+            },
+            {
+                name: "Zero Two",
+                from: "",
+                link: "l:zero_two,",
+                image: "https://images-ng.pixai.art/images/orig/c3b81738-82fc-42c3-8e7f-3b7d916c298b"
             }
         ]
     }
